@@ -9,13 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     @State var tabCount:Int = 1
+    @State var current:CGFloat = 1
+    @State var final:CGFloat = 1
+    
     var body: some View {
         let magni = MagnificationGesture()
             .onChanged(){ value in
+                current = value
 
             }
             .onEnded { value in
-                self.tabCount += 1
+                if current > 2 {
+                    self.tabCount += 1
+                }
+                final = current + final
+                current = 0
             }
         
         VStack {
@@ -26,7 +34,7 @@ struct ContentView: View {
                 if tabCount%2 == 0 {
                     Text("Static View")
                 }else {
-                    scrollView(tabCount: $tabCount)
+                    Scroll(current: $current)
                 }
             }
             Spacer()
@@ -41,32 +49,7 @@ struct ContentView: View {
     }
 }
 
-struct scrollView:View {
-    @Binding var tabCount:Int
-    var body: some View {
-        ScrollViewReader { proxy in
-            HStack {
-                
-                Button("Foreword"){
-                    proxy.scrollTo(9, anchor: .center)
-                }
-            }
-            ScrollView(.horizontal) {
-                HStack {
-                    ForEach(0..<20) { item in
-                        RoundedRectangle(cornerRadius: 25.0)
-                            .frame(width: 100, height: 40)
-                            .overlay(Text("\(item)").foregroundColor(.white))
-                            .id(item)
-                            .onAppear() {
-                                proxy.scrollTo(tabCount, anchor: .center)
-                            }
-                    }
-                }
-            }
-        }
-    }
-}
+
 
 
 struct ContentView_Previews: PreviewProvider {

@@ -13,6 +13,8 @@
 		C291B36626748358002B20C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C291B35126748356002B20C0 /* ContentView.swift */; };
 		C291B36726748358002B20C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C291B35226748358002B20C0 /* Assets.xcassets */; };
 		C291B36826748358002B20C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C291B35226748358002B20C0 /* Assets.xcassets */; };
+		C2A93A2E26764098000F72FE /* UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A93A2D26764098000F72FE /* UIKit.swift */; };
+		C2A93A2F26764098000F72FE /* UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A93A2D26764098000F72FE /* UIKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		C291B35F26748358002B20C0 /* UIScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C291B36126748358002B20C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C291B36226748358002B20C0 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		C2A93A2D26764098000F72FE /* UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,7 @@
 			children = (
 				C291B35026748356002B20C0 /* UIScrollViewApp.swift */,
 				C291B35126748356002B20C0 /* ContentView.swift */,
+				C2A93A2D26764098000F72FE /* UIKit.swift */,
 				C291B35226748358002B20C0 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -188,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C291B36526748358002B20C0 /* ContentView.swift in Sources */,
+				C2A93A2E26764098000F72FE /* UIKit.swift in Sources */,
 				C291B36326748358002B20C0 /* UIScrollViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C291B36626748358002B20C0 /* ContentView.swift in Sources */,
+				C2A93A2F26764098000F72FE /* UIKit.swift in Sources */,
 				C291B36426748358002B20C0 /* UIScrollViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

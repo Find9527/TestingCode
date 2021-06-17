@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollAutolayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGG-4e-TAt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mth-qQ-d2k" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="top" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gs-Wm-GWE">
+                                                <rect key="frame" x="194" y="82" width="26" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="center" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CI2-PN-87l">
+                                                <rect key="frame" x="182.5" y="703" width="49" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bottom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awO-xo-9fd">
+                                                <rect key="frame" x="179.5" y="1224" width="55" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbm-QX-TSp">
+                                                <rect key="frame" x="20.5" y="919" width="373" height="325"/>
+                                                <string key="text">If you are allergic to hacks, you should probably stay away from the code in this article. However, if you continue, know that we will explore the powerful effects of combining Hosting Views with View Representables. Many times I found myself with a SwiftUI view and wishing I could access the AppKit/UIKit stuff behind it. We both know it’s there, so let’s see how we can tap on it.
+
+To achieve this, we will be using NSHostingView+NSViewRepresentable in macOS, and UIHostingController+UIViewControllerRepresentable in iOS. The concept is the same in both cases, but I will present a useful example for each platform.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="awO-xo-9fd" secondAttribute="bottom" constant="55" id="2of-1x-dHd"/>
+                                            <constraint firstItem="awO-xo-9fd" firstAttribute="top" secondItem="CI2-PN-87l" secondAttribute="bottom" constant="500" id="H68-Fx-YMd"/>
+                                            <constraint firstItem="8gs-Wm-GWE" firstAttribute="centerX" secondItem="Mth-qQ-d2k" secondAttribute="centerX" id="Mah-rc-c8o"/>
+                                            <constraint firstItem="CI2-PN-87l" firstAttribute="centerX" secondItem="Mth-qQ-d2k" secondAttribute="centerX" id="Yhu-z9-A2r"/>
+                                            <constraint firstItem="8gs-Wm-GWE" firstAttribute="top" secondItem="Mth-qQ-d2k" secondAttribute="top" constant="82" id="bzj-cX-A3C"/>
+                                            <constraint firstItem="CI2-PN-87l" firstAttribute="top" secondItem="8gs-Wm-GWE" secondAttribute="bottom" constant="600" id="ckV-E9-qQH"/>
+                                            <constraint firstItem="Wbm-QX-TSp" firstAttribute="top" secondItem="CI2-PN-87l" secondAttribute="bottom" constant="195" id="f2S-Uw-Tvq"/>
+                                            <constraint firstItem="Wbm-QX-TSp" firstAttribute="centerX" secondItem="Mth-qQ-d2k" secondAttribute="centerX" id="nof-M5-LGL"/>
+                                            <constraint firstItem="awO-xo-9fd" firstAttribute="centerX" secondItem="Mth-qQ-d2k" secondAttribute="centerX" id="xyH-ti-62G"/>
+                                            <constraint firstItem="Wbm-QX-TSp" firstAttribute="width" secondItem="Mth-qQ-d2k" secondAttribute="width" multiplier="0.9" id="yP5-tM-9fN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Mth-qQ-d2k" secondAttribute="bottom" id="DMx-4x-U9E"/>
+                                    <constraint firstItem="Mth-qQ-d2k" firstAttribute="top" secondItem="wGG-4e-TAt" secondAttribute="top" id="UUu-xw-i33"/>
+                                    <constraint firstItem="Mth-qQ-d2k" firstAttribute="width" secondItem="wGG-4e-TAt" secondAttribute="width" id="Xaz-LL-bfd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mth-qQ-d2k" secondAttribute="trailing" id="YLP-cg-Psg"/>
+                                    <constraint firstItem="Mth-qQ-d2k" firstAttribute="leading" secondItem="wGG-4e-TAt" secondAttribute="leading" id="isC-Ys-vTA"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="4eZ-yS-gb5"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="9oj-UL-xYp"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wGG-4e-TAt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0B7-lf-1XV"/>
+                            <constraint firstItem="wGG-4e-TAt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kbY-wj-1sb"/>
+                            <constraint firstAttribute="bottom" secondItem="wGG-4e-TAt" secondAttribute="bottom" id="xMP-5o-4EL"/>
+                            <constraint firstItem="wGG-4e-TAt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zuz-ox-xPa"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="centent" destination="Mth-qQ-d2k" id="aEf-fj-q3t"/>
+                        <outlet property="scroll" destination="wGG-4e-TAt" id="hNu-vU-jOr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.043478260869566" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
