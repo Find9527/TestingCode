@@ -25,13 +25,11 @@ class ViewController: UIViewController {
         let contentlea = contentview.leadingAnchor.constraint(equalTo: scrollview.leadingAnchor)
         let contenttra = contentview.trailingAnchor.constraint(equalTo: scrollview.trailingAnchor)
         let contentbot = contentview.bottomAnchor.constraint(equalTo: scrollview.bottomAnchor)
-        //let contentwid = contentview.widthAnchor.constraint(equalTo: scrollview.widthAnchor)
-//        let contenthei = contentview.heightAnchor.constraint(equalTo: scrollview.heightAnchor)
+        
         
         scrollview.addSubview(contentview)
         
         
-
         let imageview = UIImageView(image: UIImage(named: "image1"))
         imageview.translatesAutoresizingMaskIntoConstraints = false
         
@@ -39,17 +37,12 @@ class ViewController: UIViewController {
         let imageviewlea = imageview.leadingAnchor.constraint(equalTo: contentview.leadingAnchor)
         let imageviewtra = imageview.trailingAnchor.constraint(equalTo: contentview.trailingAnchor)
         let imageviewbot = imageview.bottomAnchor.constraint(equalTo: contentview.bottomAnchor)
-//        let imageviewwid = imageview.widthAnchor.constraint(equalTo: contentview.widthAnchor)
-//        let imageviewtra = imageview.trailingAnchor.constraint(equalTo: contentview.trailingAnchor)
+
 
         contentview.addSubview(imageview)
         
         
-        
-    
-        
-        
-        
+     
         
         scrolltop.isActive = true
         scrolllea.isActive = true
@@ -60,14 +53,12 @@ class ViewController: UIViewController {
         contentlea.isActive = true
         contenttra.isActive = true
         contentbot.isActive = true
-//        contentwid.isActive = true
-//        contenthei.isActive = true
+
         
         imageviewtop.isActive = true
         imageviewlea.isActive = true
         imageviewtra.isActive = true
         imageviewbot.isActive = true
-//        imageviewwid.isActive = true
         
         
         

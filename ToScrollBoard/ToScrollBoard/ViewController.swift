@@ -1,9 +1,8 @@
-//
-//  ViewController.swift
-//  ToScrollBoard
-//
-//  Created by Orange on 2021/6/24.
-//
+
+
+
+
+
 
 import UIKit
 import SwiftUI
@@ -18,11 +17,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var trailingCon: NSLayoutConstraint!
     @IBOutlet weak var button: UIButton!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         trailingCon.constant = 25*100
         button.addTarget(self, action: #selector(buttonfun), for: .touchDown)
+        
+        let lpgr = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress))
+        lpgr.minimumPressDuration = 0.5
+        lpgr.delaysTouchesBegan = true
+        button.addGestureRecognizer(lpgr)
+        
+        let pinGesture = UIPinchGestureRecognizer(target: self, action: #selector(pinchFun))
+        containerview.addGestureRecognizer(pinGesture)
 
     }
 
@@ -34,9 +43,25 @@ class ViewController: UIViewController {
         model.width += 40
         trailingCon.constant = 25*model.width
         scroll.setContentOffset(CGPoint(x: 13*model.width, y: 0), animated: false)
-//        print("print",model.width)
-
     }
     
+    
+    @objc func handleLongPress(gestureReconizer: UILongPressGestureRecognizer) {
+        if gestureReconizer.state != UIGestureRecognizer.State.ended {
+            //When lognpress is start or running
+            print("long")
+        }
+        else {
+            //When lognpress is finish
+            print("fail")
+        }
+    }
+    
+    @objc func pinchFun(gestureReconizer:UIPinchGestureRecognizer) {
+        model.width += 4
+        trailingCon.constant = 25*model.width
+        scroll.setContentOffset(CGPoint(x: 13*model.width, y: 0), animated: false)
+        print(gestureReconizer.scale)
+    }
 }
 
