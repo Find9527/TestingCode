@@ -5,14 +5,13 @@ import UIKit
 import SwiftUI
 
 protocol TestProtocl:AnyObject {
-    func dosomething()
+    func dosomething(width:CGFloat)
 }
 
 
 class HostingController: UIViewController, TestProtocl {
     
-    let second = ModelData()
-    var width:CGFloat?
+    let model = ModelData()
     var widthConstraint:NSLayoutConstraint?
     
         
@@ -23,7 +22,7 @@ class HostingController: UIViewController, TestProtocl {
                 
         view.backgroundColor = .yellow
         
-        let hostingController = UIHostingController(rootView: ForeachView().environmentObject(second))
+        let hostingController = UIHostingController(rootView: ForeachView().environmentObject(model))
         hostingController.view.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(hostingController.view)
         
@@ -53,7 +52,7 @@ class HostingController: UIViewController, TestProtocl {
         NSLayoutConstraint.activate([
             hostingController.view.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             hostingController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-//            hostingController.view.widthAnchor.constraint(equalToConstant: 20*100),
+            //hostingController.view.widthAnchor.constraint(equalToConstant: 20*100),
             widthConstraint!,
             hostingController.view.heightAnchor.constraint(equalToConstant: 300),
         ])
@@ -65,7 +64,6 @@ class HostingController: UIViewController, TestProtocl {
             button.widthAnchor.constraint(equalToConstant: 200),
             button.heightAnchor.constraint(equalToConstant: 40)
         ])
-    
           
     }
     
@@ -78,15 +76,12 @@ class HostingController: UIViewController, TestProtocl {
         
     }
     
-    
-    func dosomething() {
-        second.width += 40
-        self.width = second.width
-        self.widthConstraint?.constant = 20 * second.width
-        print("代理方法被执行","second.width",second.width)
+    func dosomething(width:CGFloat) {
+        model.width = width
+        self.widthConstraint?.constant = 20 * model.width
+        print("代理方法被执行","model.width",model.width)
     }
-    
-    
+        
 }
 
 

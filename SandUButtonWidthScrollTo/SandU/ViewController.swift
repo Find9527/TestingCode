@@ -5,11 +5,17 @@ import SwiftUI
 
 class ViewController: UIViewController {
     
+    var width:CGFloat = 100
     var widthConstrain:NSLayoutConstraint?
    
     let scroll = UIScrollView()
     let hostVC = HostingController()
     private var delegate: TestProtocl?
+    
+    private var currenrt:CGFloat = 1
+    private var final:CGFloat = 0
+    private var maxZoom:CGFloat = 4
+    private var minZoom:CGFloat = 0.5
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +31,7 @@ class ViewController: UIViewController {
         contentview.backgroundColor = .green
         contentview.translatesAutoresizingMaskIntoConstraints = false
         
-        hostVC.view.backgroundColor = .blue
+        hostVC.view.backgroundColor = .gray
         hostVC.view.translatesAutoresizingMaskIntoConstraints = false
         
         let button = UIButton(frame: CGRect(x: 500, y: 600, width: 200, height: 40))
@@ -33,6 +39,8 @@ class ViewController: UIViewController {
         button.setTitle("父View的按钮", for: .normal)
         button.addTarget(self, action: #selector(buttonFun), for: .touchDown)
         
+        let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(pinchGestureFun))
+        contentview.addGestureRecognizer(pinchGesture)
         
         view.addSubview(scroll)
         scroll.addSubview(contentview)
@@ -65,17 +73,41 @@ class ViewController: UIViewController {
             widthConstrain!
         ])
         
+//        print(setzoom(pinchGesture))
+        
+        
     }
     
     @objc func buttonFun() {
-        delegate?.dosomething()
-        widthConstrain?.constant = hostVC.width! * 20
-        scroll.setContentOffset(CGPoint(x: 13*hostVC.width!, y: 0), animated: false)
-        print("width",hostVC.width!,widthConstrain!.constant)
+        
+
     }
     
+    @objc func pinchGestureFun(_ recognizer:UIPinchGestureRecognizer) {
+        self.width = 100*setzoom(recognizer) + 50
+        delegate?.dosomething(width: width)
+        widthConstrain?.constant = width * 20
+        scroll.setContentOffset(CGPoint(x: 13*width, y: 0), animated: false)
+        print("setzoom", setzoom(recognizer), "width", width)
+                 
+    }
+    
+    func setzoom(_ recognizer:UIPinchGestureRecognizer) -> CGFloat {
+        self.currenrt = recognizer.scale - 1
+        self.final = currenrt*0.1+final
+        if final>=4 {final = 4}
+        else if final <= 0.5 {final = 0.5}
+        self.currenrt = 1
+        return self.final
+    }
    
 }
+
+
+
+
+
+
 
 
 
