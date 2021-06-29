@@ -1,9 +1,6 @@
-//
-//  ConversionViewController.swift
-//  212
-//
-//  Created by Orange on 2021/6/21.
-//
+
+
+
 
 import UIKit
 
@@ -67,8 +64,4 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         print("con loaded")
         updatesheshidu()
     }
-    
-    
-    
-    
 }

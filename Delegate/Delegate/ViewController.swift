@@ -18,6 +18,11 @@ class Sleep {
     
 }
 
+
+
+
+
+
 class ViewController: UIViewController, SleepDelegate {
     var sleepInstance = Sleep()
     override func viewDidLoad() {

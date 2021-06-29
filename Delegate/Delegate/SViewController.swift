@@ -1,9 +1,4 @@
-//
-//  SecondViewController.swift
-//  Delegate
-//
-//  Created by Orange on 2021/6/26.
-//
+
 
 import UIKit
 

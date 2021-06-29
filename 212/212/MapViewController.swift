@@ -18,7 +18,6 @@ class MapViewController: UIViewController {
         view = mapView
         
         let segmentControl = UISegmentedControl(items: ["standard", "Hybrid", "Satellite"])
-//        segmentControl.backgroundColor = UIColor.gray
         segmentControl.selectedSegmentIndex = 0
         segmentControl.translatesAutoresizingMaskIntoConstraints = false
         segmentControl.addTarget(self, action: #selector(MapViewController.mapTypeChange(_:)), for: .valueChanged)
