@@ -21,9 +21,7 @@ struct ForeachView: View {
             }
             .frame(height: 200)
             .border(Color.black)
-//            Button("width") {
-//                model.width += 40
-//            }
+            
         }
     }
 }

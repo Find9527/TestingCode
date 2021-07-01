@@ -5,14 +5,13 @@ import SwiftUI
 
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, TestProtocl {
     
     var width:CGFloat = 100
     var widthConstrain:NSLayoutConstraint?
    
     let scroll = UIScrollView()
     let hostVC = HostingController()
-    private var delegate: TestProtocl?
     
     private var currenrt:CGFloat = 1
     private var final:CGFloat = 0
@@ -24,7 +23,7 @@ class ViewController: UIViewController {
                 
         addChild(hostVC)
 
-        self.delegate = hostVC
+        hostVC.delegate = self
 
         scroll.backgroundColor = .red
         scroll.translatesAutoresizingMaskIntoConstraints = false
@@ -41,8 +40,6 @@ class ViewController: UIViewController {
         button.setTitle("父View的按钮", for: .normal)
         button.addTarget(self, action: #selector(buttonFun), for: .touchDown)
         
-        let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(pinchGestureFun))
-        contentview.addGestureRecognizer(pinchGesture)
         
         view.addSubview(scroll)
         scroll.addSubview(contentview)
@@ -79,30 +76,16 @@ class ViewController: UIViewController {
     }
     
     @objc func buttonFun() {
-        
-
+        print("father button")
     }
     
-    @objc func pinchGestureFun(_ recognizer:UIPinchGestureRecognizer) {
-        self.width = 100*setzoom(recognizer) + 50
-        delegate?.dosomething(width: width)
+    func dosomething(width: CGFloat) {
+        self.width = width
         widthConstrain?.constant = width * 20
-        scroll.setContentOffset(CGPoint(x: 13*width, y: 0), animated: false)
-        print("setzoom", setzoom(recognizer), "width", width)
-                 
-    }
-    
-    func setzoom(_ recognizer:UIPinchGestureRecognizer) -> CGFloat {
-        self.currenrt = recognizer.scale - 1
-        self.final = currenrt*0.1+final
-        if final>=4 {final = 4}
-        else if final <= 0.5 {final = 0.5}
-        self.currenrt = 1
-        return self.final
+        scroll.setContentOffset(CGPoint(x: 9.6*width-333, y: 0), animated: false)
     }
    
 }
-
 
 
 
