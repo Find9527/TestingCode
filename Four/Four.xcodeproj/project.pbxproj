@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2DCACD1268FFD4400293604 /* FourApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACBE268FFD4200293604 /* FourApp.swift */; };
+		C2DCACD2268FFD4400293604 /* FourApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACBE268FFD4200293604 /* FourApp.swift */; };
+		C2DCACD5268FFD4400293604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2DCACC0268FFD4400293604 /* Assets.xcassets */; };
+		C2DCACD6268FFD4400293604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2DCACC0268FFD4400293604 /* Assets.xcassets */; };
+		C2DCACE5268FFD6E00293604 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACE0268FFD6D00293604 /* Model.swift */; };
+		C2DCACE6268FFD6E00293604 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACE0268FFD6D00293604 /* Model.swift */; };
+		C2DCACE7268FFD6E00293604 /* OffsetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACE1268FFD6D00293604 /* OffsetModel.swift */; };
+		C2DCACE8268FFD6E00293604 /* OffsetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACE1268FFD6D00293604 /* OffsetModel.swift */; };
+		C2DCACE9268FFD6E00293604 /* UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACE2268FFD6D00293604 /* UIKit.swift */; };
+		C2DCACEA268FFD6E00293604 /* UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACE2268FFD6D00293604 /* UIKit.swift */; };
+		C2DCACED268FFD6E00293604 /* GestureClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACE4268FFD6D00293604 /* GestureClass.swift */; };
+		C2DCACEE268FFD6E00293604 /* GestureClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACE4268FFD6D00293604 /* GestureClass.swift */; };
+		C2DCACFC268FFD7F00293604 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACF1268FFD7F00293604 /* AddView.swift */; };
+		C2DCACFD268FFD7F00293604 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACF1268FFD7F00293604 /* AddView.swift */; };
+		C2DCACFE268FFD7F00293604 /* BarALotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACF2268FFD7F00293604 /* BarALotView.swift */; };
+		C2DCACFF268FFD7F00293604 /* BarALotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACF2268FFD7F00293604 /* BarALotView.swift */; };
+		C2DCAD00268FFD7F00293604 /* ButtonTem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACF3268FFD7F00293604 /* ButtonTem.swift */; };
+		C2DCAD01268FFD7F00293604 /* ButtonTem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACF3268FFD7F00293604 /* ButtonTem.swift */; };
+		C2DCAD02268FFD7F00293604 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACF4268FFD7F00293604 /* BarView.swift */; };
+		C2DCAD03268FFD7F00293604 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACF4268FFD7F00293604 /* BarView.swift */; };
+		C2DCAD04268FFD7F00293604 /* CenturyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACF5268FFD7F00293604 /* CenturyView.swift */; };
+		C2DCAD05268FFD7F00293604 /* CenturyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACF5268FFD7F00293604 /* CenturyView.swift */; };
+		C2DCAD06268FFD7F00293604 /* IsEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACF6268FFD7F00293604 /* IsEdge.swift */; };
+		C2DCAD07268FFD7F00293604 /* IsEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACF6268FFD7F00293604 /* IsEdge.swift */; };
+		C2DCAD08268FFD7F00293604 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACF8268FFD7F00293604 /* ComposeView.swift */; };
+		C2DCAD09268FFD7F00293604 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACF8268FFD7F00293604 /* ComposeView.swift */; };
+		C2DCAD0A268FFD7F00293604 /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACFA268FFD7F00293604 /* NodeView.swift */; };
+		C2DCAD0B268FFD7F00293604 /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACFA268FFD7F00293604 /* NodeView.swift */; };
+		C2DCAD0C268FFD7F00293604 /* NodeALotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACFB268FFD7F00293604 /* NodeALotView.swift */; };
+		C2DCAD0D268FFD7F00293604 /* NodeALotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCACFB268FFD7F00293604 /* NodeALotView.swift */; };
+		C2DCAD10268FFD8F00293604 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCAD0E268FFD8F00293604 /* ContentView.swift */; };
+		C2DCAD11268FFD8F00293604 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCAD0E268FFD8F00293604 /* ContentView.swift */; };
+		C2DCAD12268FFD8F00293604 /* TransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCAD0F268FFD8F00293604 /* TransitionView.swift */; };
+		C2DCAD13268FFD8F00293604 /* TransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCAD0F268FFD8F00293604 /* TransitionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C2DCACBE268FFD4200293604 /* FourApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourApp.swift; sourceTree = "<group>"; };
+		C2DCACC0268FFD4400293604 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2DCACC5268FFD4400293604 /* Four.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Four.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2DCACC8268FFD4400293604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2DCACCD268FFD4400293604 /* Four.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Four.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2DCACCF268FFD4400293604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2DCACD0268FFD4400293604 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		C2DCACE0268FFD6D00293604 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C2DCACE1268FFD6D00293604 /* OffsetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffsetModel.swift; sourceTree = "<group>"; };
+		C2DCACE2268FFD6D00293604 /* UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKit.swift; sourceTree = "<group>"; };
+		C2DCACE4268FFD6D00293604 /* GestureClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureClass.swift; sourceTree = "<group>"; };
+		C2DCACF1268FFD7F00293604 /* AddView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		C2DCACF2268FFD7F00293604 /* BarALotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarALotView.swift; sourceTree = "<group>"; };
+		C2DCACF3268FFD7F00293604 /* ButtonTem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTem.swift; sourceTree = "<group>"; };
+		C2DCACF4268FFD7F00293604 /* BarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		C2DCACF5268FFD7F00293604 /* CenturyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenturyView.swift; sourceTree = "<group>"; };
+		C2DCACF6268FFD7F00293604 /* IsEdge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsEdge.swift; sourceTree = "<group>"; };
+		C2DCACF8268FFD7F00293604 /* ComposeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
+		C2DCACFA268FFD7F00293604 /* NodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeView.swift; sourceTree = "<group>"; };
+		C2DCACFB268FFD7F00293604 /* NodeALotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeALotView.swift; sourceTree = "<group>"; };
+		C2DCAD0E268FFD8F00293604 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../../NativeCode/Third/Shared/App/ContentView.swift; sourceTree = "<group>"; };
+		C2DCAD0F268FFD8F00293604 /* TransitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2DCACC2268FFD4400293604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2DCACCA268FFD4400293604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2DCACB8268FFD4200293604 = {
+			isa = PBXGroup;
+			children = (
+				C2DCACBD268FFD4200293604 /* Shared */,
+				C2DCACEF268FFD7F00293604 /* Pro */,
+				C2DCACDF268FFD6D00293604 /* Model */,
+				C2DCACC0268FFD4400293604 /* Assets.xcassets */,
+				C2DCACC7268FFD4400293604 /* iOS */,
+				C2DCACCE268FFD4400293604 /* macOS */,
+				C2DCACC6268FFD4400293604 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2DCACBD268FFD4200293604 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C2DCACBE268FFD4200293604 /* FourApp.swift */,
+				C2DCAD0E268FFD8F00293604 /* ContentView.swift */,
+				C2DCAD0F268FFD8F00293604 /* TransitionView.swift */,
+				C2DCACF8268FFD7F00293604 /* ComposeView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C2DCACC6268FFD4400293604 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2DCACC5268FFD4400293604 /* Four.app */,
+				C2DCACCD268FFD4400293604 /* Four.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2DCACC7268FFD4400293604 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C2DCACC8268FFD4400293604 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		C2DCACCE268FFD4400293604 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				C2DCACCF268FFD4400293604 /* Info.plist */,
+				C2DCACD0268FFD4400293604 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		C2DCACDF268FFD6D00293604 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2DCACE0268FFD6D00293604 /* Model.swift */,
+				C2DCACE1268FFD6D00293604 /* OffsetModel.swift */,
+				C2DCACE2268FFD6D00293604 /* UIKit.swift */,
+				C2DCACE4268FFD6D00293604 /* GestureClass.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2DCACEF268FFD7F00293604 /* Pro */ = {
+			isa = PBXGroup;
+			children = (
+				C2DCACF0268FFD7F00293604 /* Basic */,
+				C2DCAD142690025700293604 /* UP */,
+				C2DCACF9268FFD7F00293604 /* Down */,
+			);
+			path = Pro;
+			sourceTree = "<group>";
+		};
+		C2DCACF0268FFD7F00293604 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				C2DCACF1268FFD7F00293604 /* AddView.swift */,
+				C2DCACF4268FFD7F00293604 /* BarView.swift */,
+				C2DCACF3268FFD7F00293604 /* ButtonTem.swift */,
+				C2DCACF6268FFD7F00293604 /* IsEdge.swift */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		C2DCACF9268FFD7F00293604 /* Down */ = {
+			isa = PBXGroup;
+			children = (
+				C2DCACFA268FFD7F00293604 /* NodeView.swift */,
+				C2DCACFB268FFD7F00293604 /* NodeALotView.swift */,
+			);
+			path = Down;
+			sourceTree = "<group>";
+		};
+		C2DCAD142690025700293604 /* UP */ = {
+			isa = PBXGroup;
+			children = (
+				C2DCACF5268FFD7F00293604 /* CenturyView.swift */,
+				C2DCACF2268FFD7F00293604 /* BarALotView.swift */,
+			);
+			path = UP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2DCACC4268FFD4400293604 /* Four (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2DCACD9268FFD4400293604 /* Build configuration list for PBXNativeTarget "Four (iOS)" */;
+			buildPhases = (
+				C2DCACC1268FFD4400293604 /* Sources */,
+				C2DCACC2268FFD4400293604 /* Frameworks */,
+				C2DCACC3268FFD4400293604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Four (iOS)";
+			productName = "Four (iOS)";
+			productReference = C2DCACC5268FFD4400293604 /* Four.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2DCACCC268FFD4400293604 /* Four (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2DCACDC268FFD4400293604 /* Build configuration list for PBXNativeTarget "Four (macOS)" */;
+			buildPhases = (
+				C2DCACC9268FFD4400293604 /* Sources */,
+				C2DCACCA268FFD4400293604 /* Frameworks */,
+				C2DCACCB268FFD4400293604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Four (macOS)";
+			productName = "Four (macOS)";
+			productReference = C2DCACCD268FFD4400293604 /* Four.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2DCACB9268FFD4200293604 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C2DCACC4268FFD4400293604 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C2DCACCC268FFD4400293604 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = C2DCACBC268FFD4200293604 /* Build configuration list for PBXProject "Four" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2DCACB8268FFD4200293604;
+			productRefGroup = C2DCACC6268FFD4400293604 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2DCACC4268FFD4400293604 /* Four (iOS) */,
+				C2DCACCC268FFD4400293604 /* Four (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2DCACC3268FFD4400293604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2DCACD5268FFD4400293604 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2DCACCB268FFD4400293604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2DCACD6268FFD4400293604 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2DCACC1268FFD4400293604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2DCACE9268FFD6E00293604 /* UIKit.swift in Sources */,
+				C2DCAD02268FFD7F00293604 /* BarView.swift in Sources */,
+				C2DCACED268FFD6E00293604 /* GestureClass.swift in Sources */,
+				C2DCACE7268FFD6E00293604 /* OffsetModel.swift in Sources */,
+				C2DCAD12268FFD8F00293604 /* TransitionView.swift in Sources */,
+				C2DCACFC268FFD7F00293604 /* AddView.swift in Sources */,
+				C2DCACE5268FFD6E00293604 /* Model.swift in Sources */,
+				C2DCAD10268FFD8F00293604 /* ContentView.swift in Sources */,
+				C2DCAD06268FFD7F00293604 /* IsEdge.swift in Sources */,
+				C2DCAD08268FFD7F00293604 /* ComposeView.swift in Sources */,
+				C2DCACFE268FFD7F00293604 /* BarALotView.swift in Sources */,
+				C2DCAD04268FFD7F00293604 /* CenturyView.swift in Sources */,
+				C2DCAD00268FFD7F00293604 /* ButtonTem.swift in Sources */,
+				C2DCACD1268FFD4400293604 /* FourApp.swift in Sources */,
+				C2DCAD0C268FFD7F00293604 /* NodeALotView.swift in Sources */,
+				C2DCAD0A268FFD7F00293604 /* NodeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2DCACC9268FFD4400293604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2DCACEA268FFD6E00293604 /* UIKit.swift in Sources */,
+				C2DCAD03268FFD7F00293604 /* BarView.swift in Sources */,
+				C2DCACEE268FFD6E00293604 /* GestureClass.swift in Sources */,
+				C2DCACE8268FFD6E00293604 /* OffsetModel.swift in Sources */,
+				C2DCAD13268FFD8F00293604 /* TransitionView.swift in Sources */,
+				C2DCACFD268FFD7F00293604 /* AddView.swift in Sources */,
+				C2DCACE6268FFD6E00293604 /* Model.swift in Sources */,
+				C2DCAD11268FFD8F00293604 /* ContentView.swift in Sources */,
+				C2DCAD07268FFD7F00293604 /* IsEdge.swift in Sources */,
+				C2DCAD09268FFD7F00293604 /* ComposeView.swift in Sources */,
+				C2DCACFF268FFD7F00293604 /* BarALotView.swift in Sources */,
+				C2DCAD05268FFD7F00293604 /* CenturyView.swift in Sources */,
+				C2DCAD01268FFD7F00293604 /* ButtonTem.swift in Sources */,
+				C2DCACD2268FFD4400293604 /* FourApp.swift in Sources */,
+				C2DCAD0D268FFD7F00293604 /* NodeALotView.swift in Sources */,
+				C2DCAD0B268FFD7F00293604 /* NodeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C2DCACD7268FFD4400293604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2DCACD8268FFD4400293604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C2DCACDA268FFD4400293604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zindex.Four;
+				PRODUCT_NAME = Four;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2DCACDB268FFD4400293604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zindex.Four;
+				PRODUCT_NAME = Four;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2DCACDD268FFD4400293604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zindex.Four;
+				PRODUCT_NAME = Four;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C2DCACDE268FFD4400293604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zindex.Four;
+				PRODUCT_NAME = Four;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2DCACBC268FFD4200293604 /* Build configuration list for PBXProject "Four" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2DCACD7268FFD4400293604 /* Debug */,
+				C2DCACD8268FFD4400293604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2DCACD9268FFD4400293604 /* Build configuration list for PBXNativeTarget "Four (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2DCACDA268FFD4400293604 /* Debug */,
+				C2DCACDB268FFD4400293604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2DCACDC268FFD4400293604 /* Build configuration list for PBXNativeTarget "Four (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2DCACDD268FFD4400293604 /* Debug */,
+				C2DCACDE268FFD4400293604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2DCACB9268FFD4200293604 /* Project object */;
+}
