@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C2FFFEDB2689F07100A9E882 /* Test5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test5.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2FFFEDB2689F07100A9E882 /* ChangeConstraints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChangeConstraints.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FFFEDE2689F07100A9E882 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2FFFEE02689F07100A9E882 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C2FFFEE22689F07100A9E882 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		C2FFFEDC2689F07100A9E882 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C2FFFEDB2689F07100A9E882 /* Test5.app */,
+				C2FFFEDB2689F07100A9E882 /* ChangeConstraints.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C2FFFEDA2689F07100A9E882 /* Test5 */ = {
+		C2FFFEDA2689F07100A9E882 /* ChangeConstraints */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2FFFEEF2689F07300A9E882 /* Build configuration list for PBXNativeTarget "Test5" */;
+			buildConfigurationList = C2FFFEEF2689F07300A9E882 /* Build configuration list for PBXNativeTarget "ChangeConstraints" */;
 			buildPhases = (
 				C2FFFED72689F07100A9E882 /* Sources */,
 				C2FFFED82689F07100A9E882 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = Test5;
+			name = ChangeConstraints;
 			productName = Test5;
-			productReference = C2FFFEDB2689F07100A9E882 /* Test5.app */;
+			productReference = C2FFFEDB2689F07100A9E882 /* ChangeConstraints.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C2FFFED62689F07100A9E882 /* Build configuration list for PBXProject "Test5" */;
+			buildConfigurationList = C2FFFED62689F07100A9E882 /* Build configuration list for PBXProject "ChangeConstraints" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C2FFFEDA2689F07100A9E882 /* Test5 */,
+				C2FFFEDA2689F07100A9E882 /* ChangeConstraints */,
 			);
 		};
 /* End PBXProject section */
@@ -320,7 +320,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C2FFFED62689F07100A9E882 /* Build configuration list for PBXProject "Test5" */ = {
+		C2FFFED62689F07100A9E882 /* Build configuration list for PBXProject "ChangeConstraints" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C2FFFEED2689F07300A9E882 /* Debug */,
@@ -329,7 +329,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2FFFEEF2689F07300A9E882 /* Build configuration list for PBXNativeTarget "Test5" */ = {
+		C2FFFEEF2689F07300A9E882 /* Build configuration list for PBXNativeTarget "ChangeConstraints" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C2FFFEF02689F07300A9E882 /* Debug */,
