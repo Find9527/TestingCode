@@ -13,7 +13,6 @@ class HostingController: UIViewController, TestProtocl {
     
     let model = ModelData()
     var widthConstraint:NSLayoutConstraint?
-    
         
     let label = UILabel(frame: CGRect(x: 500, y: 700, width: 100, height: 100))
             
@@ -47,7 +46,7 @@ class HostingController: UIViewController, TestProtocl {
         view.addSubview(button)
         view.addSubview(label)
         
-        widthConstraint =             hostingController.view.widthAnchor.constraint(equalToConstant: 20*100)
+        widthConstraint =             hostingController.view.widthAnchor.constraint(equalToConstant: 88*100)
 
         NSLayoutConstraint.activate([
             hostingController.view.centerYAnchor.constraint(equalTo: view.centerYAnchor),
@@ -76,7 +75,7 @@ class HostingController: UIViewController, TestProtocl {
     
     func dosomething(width:CGFloat) {
         model.width = width
-        self.widthConstraint?.constant = 20 * model.width
+        self.widthConstraint?.constant = 88 * model.width
         print("代理方法被执行","model.width",model.width)
     }
         
