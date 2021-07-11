@@ -18,12 +18,14 @@ struct ForeachView: View {
     @State private var outerend:Int = 12
     @State private var innerend:Int = 12
     
+    @State var displaynumber:Int = 0
+    
     var width:CGFloat = 100
         
     
     var body: some View {
         HStack(spacing:0) {
-            ForEach(outerstart ..< outerend+1, id: \.self) { count in
+            ForEach(outerstart ..< outerend, id: \.self) { count in
                 HStack {
                     GeometryReader { geo in
                         RoundedRectangle(cornerRadius: 25.0)
@@ -32,12 +34,11 @@ struct ForeachView: View {
                             .overlay(Text(changeOuterText(item: count))
                                     .foregroundColor(.white))
                             .position(x: width/2, y: 100)
-
                     }
                 }
                 .frame(width: width)
                 .border(Color.black)
-
+                
                 ForEach(innerstart ..< innerend, id: \.self) { point in
                     HStack {
                         GeometryReader { geo in
@@ -48,11 +49,10 @@ struct ForeachView: View {
                     }
                     .frame(width: width)
                     .border(Color.black)
-
                 }
                 
                 if innerend > 20 {
-                    if solution.numberOfDays(yearnumbers.yearstart, count) > 28 {
+                    if solution.numberOfDays(yearnumbers.yearstart, count+yearnumbers.monthstart) > 28 {
                         ForEach(innerend ..< solution.numberOfDays(yearnumbers.yearstart, count)+1, id: \.self) { point in
                             HStack {
                                 GeometryReader { geo in
@@ -86,7 +86,7 @@ struct ForeachView: View {
         switch uikitmodel.count {
         case 6:
             outerstart = yearnumbers.monthstart
-            outerend = yearnumbers.monthstart + 2
+            outerend = yearnumbers.monthstart + 4
             innerstart = 2
             innerend = 29
         case 5:
@@ -170,14 +170,31 @@ struct PointView: View {
 }
 
 // MARK: - 计算一个月有几天的类
+//class Solution {
+//    func numberOfDays(_ Y: Int, _ M: Int) -> Int {
+//        if Y % 400 == 0 || (Y % 100 != 0 && Y % 4 == 0)
+//        {
+//            if M == 2 {return 29}
+//        }
+//        let mon:[Int] = [31,28,31,30,31,30,31,31,30,31,30,31]
+//        return mon[M - 1]
+//    }
+//}
+
 class Solution {
     func numberOfDays(_ Y: Int, _ M: Int) -> Int {
+        var month:Int = 0
+        if M > 12 {
+            month = 1
+        } else {
+            month = M
+        }
         if Y % 400 == 0 || (Y % 100 != 0 && Y % 4 == 0)
         {
-            if M == 2 {return 29}
+            if month == 2 {return 29}
         }
         let mon:[Int] = [31,28,31,30,31,30,31,31,30,31,30,31]
-        return mon[M - 1]
+        return mon[month - 1]
     }
 }
 
