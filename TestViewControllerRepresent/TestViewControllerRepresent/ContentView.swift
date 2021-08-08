@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            ToSwiftUI()
+            BackToSwiftUI()
                 .environmentObject(model)
                 .frame(height:600)
             Text("\(model.name)")
