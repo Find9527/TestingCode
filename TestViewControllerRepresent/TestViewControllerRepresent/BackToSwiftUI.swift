@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ToSwiftUI: View {
+struct BackToSwiftUI: View {
     @EnvironmentObject var model:Model
 
     @State var count:Int = 1
@@ -40,9 +40,9 @@ struct ToSwiftUI: View {
     }
 }
 
-struct ToSwiftUI_Previews: PreviewProvider {
+struct BackToSwiftUI_Previews: PreviewProvider {
     static var previews: some View {
-        ToSwiftUI()
+        BackToSwiftUI()
             .environmentObject(Model())
     }
 }

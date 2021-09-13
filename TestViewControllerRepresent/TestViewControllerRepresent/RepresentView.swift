@@ -10,9 +10,11 @@ import UIKit
 
 
 struct RepresentView: UIViewControllerRepresentable {
+    @StateObject var model:Model = Model()
     let viewcontroller = UIViewController()
     let scrollview = UIScrollView()
     @State var width:CGFloat = 0
+    @State var structNumber:Int = 0
     
         
     func makeUIViewController(context: Context) -> UIViewController {
@@ -65,10 +67,6 @@ struct RepresentView: UIViewControllerRepresentable {
     }
     
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
-
-    }
-    func dododo() {
-        print("long")
     }
     
     typealias UIViewControllerType = UIViewController
@@ -76,20 +74,23 @@ struct RepresentView: UIViewControllerRepresentable {
 // MARK: -
     
     func makeCoordinator() -> RepresentView.Coordinate {
-        Coordinator(self)
+        Coordinator(self, count: $model.count)
     }
     
     class Coordinate: NSObject, UIScrollViewDelegate {
        
         var parent: RepresentView
+        @Binding var count:Int
 
-        init(_ parent: RepresentView) {
+        init(_ parent: RepresentView, count:Binding<Int>) {
             self.parent = parent
+            self._count = count
         }
         
         
         func scrollViewDidScroll(_ scrollView: UIScrollView) {
-
+            count += 1
+            print(count)
             
         }
         
