@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2E6128026EC437F00FE9589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E6127F26EC437F00FE9589 /* AppDelegate.swift */; };
+		C2E6128226EC437F00FE9589 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E6128126EC437F00FE9589 /* SceneDelegate.swift */; };
+		C2E6128426EC437F00FE9589 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E6128326EC437F00FE9589 /* ViewController.swift */; };
+		C2E6128726EC437F00FE9589 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E6128526EC437F00FE9589 /* Main.storyboard */; };
+		C2E6128926EC438000FE9589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E6128826EC438000FE9589 /* Assets.xcassets */; };
+		C2E6128C26EC438000FE9589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E6128A26EC438000FE9589 /* LaunchScreen.storyboard */; };
+		C2E6129426EC484100FE9589 /* CameraPreaview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E6129326EC484100FE9589 /* CameraPreaview.swift */; };
+		C2E6129626EC4F4E00FE9589 /* VCSetupSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E6129526EC4F4E00FE9589 /* VCSetupSession.swift */; };
+		C2E6129926EC530700FE9589 /* VCHandpose.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E6129826EC530700FE9589 /* VCHandpose.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C2E6127C26EC437F00FE9589 /* HandPoseDetect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandPoseDetect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2E6127F26EC437F00FE9589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2E6128126EC437F00FE9589 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C2E6128326EC437F00FE9589 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2E6128626EC437F00FE9589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2E6128826EC438000FE9589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2E6128B26EC438000FE9589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C2E6128D26EC438000FE9589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2E6129326EC484100FE9589 /* CameraPreaview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreaview.swift; sourceTree = "<group>"; };
+		C2E6129526EC4F4E00FE9589 /* VCSetupSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSetupSession.swift; sourceTree = "<group>"; };
+		C2E6129726EC500F00FE9589 /* HandPoseDetect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HandPoseDetect.entitlements; sourceTree = "<group>"; };
+		C2E6129826EC530700FE9589 /* VCHandpose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCHandpose.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2E6127926EC437F00FE9589 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2E6127326EC437F00FE9589 = {
+			isa = PBXGroup;
+			children = (
+				C2E6127E26EC437F00FE9589 /* HandPoseDetect */,
+				C2E6127D26EC437F00FE9589 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2E6127D26EC437F00FE9589 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2E6127C26EC437F00FE9589 /* HandPoseDetect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2E6127E26EC437F00FE9589 /* HandPoseDetect */ = {
+			isa = PBXGroup;
+			children = (
+				C2E6129726EC500F00FE9589 /* HandPoseDetect.entitlements */,
+				C2E6127F26EC437F00FE9589 /* AppDelegate.swift */,
+				C2E6128126EC437F00FE9589 /* SceneDelegate.swift */,
+				C2E6128326EC437F00FE9589 /* ViewController.swift */,
+				C2E6129526EC4F4E00FE9589 /* VCSetupSession.swift */,
+				C2E6129826EC530700FE9589 /* VCHandpose.swift */,
+				C2E6129326EC484100FE9589 /* CameraPreaview.swift */,
+				C2E6128526EC437F00FE9589 /* Main.storyboard */,
+				C2E6128826EC438000FE9589 /* Assets.xcassets */,
+				C2E6128A26EC438000FE9589 /* LaunchScreen.storyboard */,
+				C2E6128D26EC438000FE9589 /* Info.plist */,
+			);
+			path = HandPoseDetect;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2E6127B26EC437F00FE9589 /* HandPoseDetect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2E6129026EC438000FE9589 /* Build configuration list for PBXNativeTarget "HandPoseDetect" */;
+			buildPhases = (
+				C2E6127826EC437F00FE9589 /* Sources */,
+				C2E6127926EC437F00FE9589 /* Frameworks */,
+				C2E6127A26EC437F00FE9589 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HandPoseDetect;
+			productName = HandPoseDetect;
+			productReference = C2E6127C26EC437F00FE9589 /* HandPoseDetect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2E6127426EC437F00FE9589 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C2E6127B26EC437F00FE9589 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = C2E6127726EC437F00FE9589 /* Build configuration list for PBXProject "HandPoseDetect" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2E6127326EC437F00FE9589;
+			productRefGroup = C2E6127D26EC437F00FE9589 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2E6127B26EC437F00FE9589 /* HandPoseDetect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2E6127A26EC437F00FE9589 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2E6128C26EC438000FE9589 /* LaunchScreen.storyboard in Resources */,
+				C2E6128926EC438000FE9589 /* Assets.xcassets in Resources */,
+				C2E6128726EC437F00FE9589 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2E6127826EC437F00FE9589 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2E6129926EC530700FE9589 /* VCHandpose.swift in Sources */,
+				C2E6128426EC437F00FE9589 /* ViewController.swift in Sources */,
+				C2E6129626EC4F4E00FE9589 /* VCSetupSession.swift in Sources */,
+				C2E6128026EC437F00FE9589 /* AppDelegate.swift in Sources */,
+				C2E6128226EC437F00FE9589 /* SceneDelegate.swift in Sources */,
+				C2E6129426EC484100FE9589 /* CameraPreaview.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C2E6128526EC437F00FE9589 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2E6128626EC437F00FE9589 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C2E6128A26EC438000FE9589 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2E6128B26EC438000FE9589 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2E6128E26EC438000FE9589 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2E6128F26EC438000FE9589 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2E6129126EC438000FE9589 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HandPoseDetect/HandPoseDetect.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HandPoseDetect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zindex.HandPoseDetect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2E6129226EC438000FE9589 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HandPoseDetect/HandPoseDetect.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HandPoseDetect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zindex.HandPoseDetect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2E6127726EC437F00FE9589 /* Build configuration list for PBXProject "HandPoseDetect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2E6128E26EC438000FE9589 /* Debug */,
+				C2E6128F26EC438000FE9589 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2E6129026EC438000FE9589 /* Build configuration list for PBXNativeTarget "HandPoseDetect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2E6129126EC438000FE9589 /* Debug */,
+				C2E6129226EC438000FE9589 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2E6127426EC437F00FE9589 /* Project object */;
+}
